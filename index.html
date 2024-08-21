@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- home town weather -->
+      <div class="container_1">
+        <h1>Weather Hometown</h1>
+        <p id="place"></p>
+
+        <p id="temp"></p>
+        <p id="humd"></p>
+        <div class="container_2">
+          <p id="desc"></p>
+          <img id="img" src="" alt="" />
+        </div>
+
+        <button id="btn" onclick="getweather()">Get weather</button>
+      </div>
+
+      <!-- city weather -->
+
+      <div class="container_1">
+        <h1>Weather APP World</h1>
+        <p id="place_1"></p>
+        <p id="date"></p>
+
+        <p id="temp_1"></p>
+        <p id="humd_1"></p>
+        <div class="container_2">
+          <p id="desc_1"></p>
+          <img id="img_1" src="icons/unknown.png" alt="" />
+        </div>
+
+        <div>
+            <label id="city_1" for="city">Enter City</label>
+            <input type="text" name="city" id="city" >
+        </div>
+        <div class="btn_2">
+            <button id="btn" onclick="getweathercity()">Get weather</button>
+
+        </div>
+
+        
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
