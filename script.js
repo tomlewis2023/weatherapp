@@ -1,27 +1,27 @@
 //Weather for home town
 
-const disPlace = document.getElementById("place");
-const distemp = document.getElementById("temp");
-const dishumd = document.getElementById("humd");
-const disdisc = document.getElementById("desc");
-const disimg = document.getElementById("img");
+// const disPlace = document.getElementById("place");
+// const distemp = document.getElementById("temp");
+// const dishumd = document.getElementById("humd");
+// const disdisc = document.getElementById("desc");
+// const disimg = document.getElementById("img");
 
-async function getweather() {
-  const response = await fetch(
-    "https://api.openweathermap.org/data/2.5/weather?lat=10.1004&lon=76.3570&appid=2f9f315b2018164e5e5e55dc861bab9f&units=metric"
-  );
-  const data = await response.json();
+// async function getweather() {
+//   const response = await fetch(
+//     "https://api.openweathermap.org/data/2.5/weather?lat=10.1004&lon=76.3570&appid=2f9f315b2018164e5e5e55dc861bab9f&units=metric"
+//   );
+//   const data = await response.json();
 
-  console.log(data);
-  disPlace.innerText = data.name;
-  distemp.innerText = `Temp ${data.main.temp} °C`;
-  dishumd.innerText = `Humidity ${data.main.humidity} %`;
-  disdisc.innerText = data.weather[0].description;
+//   console.log(data);
+//   disPlace.innerText = data.name;
+//   distemp.innerText = `Temp ${data.main.temp} °C`;
+//   dishumd.innerText = `Humidity ${data.main.humidity} %`;
+//   disdisc.innerText = data.weather[0].description;
 
-  const iconCode = data.weather[0].icon;
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
-  disimg.setAttribute("src", iconUrl);
-}
+//   const iconCode = data.weather[0].icon;
+//   const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+//   disimg.setAttribute("src", iconUrl);
+// }
 
 //weather for city
 
